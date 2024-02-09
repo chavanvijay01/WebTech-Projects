@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<style type="text/css">
+		.main-div{
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			height: 100vh;
+			width: 100vw;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+		.container{
+			width: 300px;
+			height: 350px;
+			border-radius: 40px;
+			margin: 20px;
+			box-shadow: 0px 0px 40px gray;
+		}
+		input{
+			height: 40px;
+			width: 40px;
+			margin: 4px;
+			border: none;
+			border-radius: 5px;
+			color: black;
+			font-family: Arial Black;
+			font-size: 15px;
+		}
+		.op{
+			background-color: transparent;
+			border: none;
+			outline: none;
+			box-shadow: 0px 0px 2px gray;
+			width: 90%;
+			text-align: right;
+			margin-top: 30px;
+		}
+		.opr{
+			background-color: orange;
+		}
+		
+		.eq{
+			width: 87px;
+			margin-left: 10px;
+			background-color: orange;
+		}
+	</style>
+</head>
+<body>
+	<div class="main-div">
+		<!-- <h2 class="heading">Calculator</h2> -->
+		<div class="container" align="center">
+
+			<form>
+			<div>
+				<input type="text" name="op" disabled class="op">
+			</div>
+			<div>
+				<input type="button"  value="C" onclick="op.value='' ">
+				<input type="button"  value="AC" onclick="op.value='' ">
+				<input type="button"  value="/" onclick="op.value+='/' " class="opr">
+				<input type="button"  value="%" onclick="op.value+='%' " class="opr">
+			</div>
+			<div>
+				<input type="button"  value="9" onclick="op.value+='9' ">
+				<input type="button"  value="8" onclick="op.value+='8' ">
+				<input type="button"  value="7" onclick="op.value+='7' ">
+				<input type="button"  value="+" onclick="op.value+='+' " class="opr">
+			</div>
+			<div>
+				<input type="button"  value="6" onclick="op.value+='6' ">
+				<input type="button"  value="5" onclick="op.value+='5' ">
+				<input type="button"  value="4" onclick="op.value+='4' ">
+				<input type="button"  value="-" onclick="op.value+='-' " class="opr">
+			</div>
+			<div>
+				<input type="button"  value="3" onclick="op.value+='3' ">
+				<input type="button"  value="2" onclick="op.value+='2' ">
+				<input type="button"  value="1" onclick="op.value+='1' ">
+				<input type="button"  value="*" onclick="op.value+='*' " class="opr">
+			</div>
+			<div>
+				<input type="button"  value="0" onclick="op.value+='0' ">
+				<input type="button"  value="." onclick="op.value+='.' ">
+				<input type="button" class="eq" value="=" onclick="op.value=eval(op.value)" class="opr" />
+			</div>
+			</form>
+		</div>
+		
+	</div>
+</body>
+</html>
