@@ -1,23 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
 </head>
+
 <body>
-   <div class="mdiv">
-    <div class="container">
-        <h3>WEATHER FORCAST</h3>
-        <form >
-            <input type="text" name="city" id="city_name" placeholder="Enter the city">
-            <button type="button" onclick="fetchCity()"><img src="https://i.pinimg.com/736x/fa/0e/7b/fa0e7b992eff03c576727e95c746005c.jpg" alt="search icon" height="20px"></button>
-        </form>
+    <div class="mdiv">
+        <div class="container">
+            <h3 class="hrading">WEATHER FORCAST</h3>
+            
+            <form>
+                <div class="component">
+                    <div>
+                        <input type="text" name="city" id="city_name" placeholder="Enter the city" autofocus />
+                    </div>
+                    <div class="btn">
+                        <button class="srch_btn" type="button" onclick="fetchCity()">
+                            <img src="https://i.pinimg.com/736x/fa/0e/7b/fa0e7b992eff03c576727e95c746005c.jpg"
+                                alt="search icon" height="20px" />
+                        </button>
+                    </div>
+                </div>
+                <br>
+                <div align = "center" style="margin-top: -20px;">
+                    <img src="https://i.pinimg.com/originals/77/0b/80/770b805d5c99c7931366c2e84e88f251.png" alt="WeatherIcon" height="150px">
+                </div>
+                <div align="center" style="margin-top: 10px;">
+                    <span id="city">CITY NAME</span>
+                    <br>
+                    <span class="measurement" id="temp">0°C</span>
+
+                </div>
+                <div align="center" style="margin-top: 15px;">
+                    <table width="100vw" cellpadding="10px">
+                        <tr align="center">
+                            <td>
+                                <h5 class="headings">WIND SPEED</h5>
+                                <span class="measurement" id="wind_speed"> 0 km/hr</span>
+                            </td>
+                            
+                            <td>
+                                <h5 class="headings" style="margin-left: 10px;">HUMIDITY</h5>
+                                <span class="measurement" id="humidity">0 g/kg</span>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </div>
+            </form>
+        </div>
     </div>
-   </div>
-    
 </body>
+
 </html>
