@@ -13,12 +13,12 @@
 <body>
     <div class="mdiv">
         <div class="container">
-            <h3 class="hrading">WEATHER FORCAST</h3>
+            <h3 class="hrading" style="margin-bottom: 10px;">WEATHER FORCAST</h3>
             
             <form>
                 <div class="component">
                     <div>
-                        <input type="text" name="city" id="city_name" placeholder="Enter the city" autofocus />
+                        <input type="text" name="city" id="city_name" placeholder="Enter the city" autofocus style="border-radius: 5px;" />
                     </div>
                     <div class="btn">
                         <button class="srch_btn" type="button" onclick="fetchCity()">
@@ -28,16 +28,16 @@
                     </div>
                 </div>
                 <br>
-                <div align = "center" style="margin-top: -20px;">
+                <div align = "center" style="margin-top: -10px;">
                     <img src="https://i.pinimg.com/originals/77/0b/80/770b805d5c99c7931366c2e84e88f251.png" alt="WeatherIcon" height="150px">
                 </div>
-                <div align="center" style="margin-top: 10px;">
-                    <span id="city">CITY NAME</span>
+                <div align="center" >
+                    <span id="city" style="font-weight: bolder;">CITY NAME</span>
                     <br>
                     <span class="measurement" id="temp">0°C</span>
 
                 </div>
-                <div align="center" style="margin-top: 15px;">
+                <div align="center" style="margin-top: 10px;">
                     <table width="100vw" cellpadding="10px">
                         <tr align="center">
                             <td>
